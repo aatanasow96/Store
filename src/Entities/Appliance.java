@@ -37,4 +37,9 @@ public class Appliance extends Product {
     public void setWeight(Double weight) {
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s", super.toString(), this.model);
+    }
 }
